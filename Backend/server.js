@@ -58,7 +58,6 @@ function adminAccess(req, res, next) {
     );
 }
 
-const PORT = 3000;
 
 app.get("/", (req, res) => {
     res.send("DriveEase Backend is running!");
@@ -827,7 +826,13 @@ app.get("/api/admin/customers",adminAccess, (req, res) => {
 
 });
 
+// ===============================
+// START SERVER
+// ===============================
 
-app.listen(PORT, () => {
-    console.log(`DriveEase server running on http://localhost:${PORT}`);
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`DriveEase server running on port ${PORT}`);
 });
+
