@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DriveEase - Edit Vehicle</title>
+
+    <link rel="stylesheet"
+          href="../Css Files/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav>
+
+            <h2>DriveEase</h2>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="vehicles.html">Vehicles</a>
+                </li>
+
+                <li>
+                    <a href="admin.html">Admin Dashboard</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- EDIT VEHICLE -->
+
+    <section class="edit-vehicle-section">
+
+        <div class="edit-vehicle-container">
+
+            <h1>Edit Vehicle</h1>
+
+            <p>
+                Update the vehicle information below.
+            </p>
+
+
+            <form id="editVehicleForm"
+                  class="edit-vehicle-form">
+
+                <label for="vehicleName">
+                    Vehicle Name
+                </label>
+
+                <input
+                    type="text"
+                    id="vehicleName"
+                    placeholder="Enter vehicle name"
+                    required
+                >
+
+
+                <label for="vehicleType">
+                    Vehicle Type
+                </label>
+
+                <select id="vehicleType" required>
+
+                    <option value="">
+                        Select vehicle type
+                    </option>
+
+                    <option value="Car">
+                        Car
+                    </option>
+
+                    <option value="Bike">
+                        Bike
+                    </option>
+
+                    <option value="Scooter">
+                        Scooter
+                    </option>
+
+                    <option value="SUV">
+                        SUV
+                    </option>
+
+                    <option value="Luxury">
+                        Luxury
+                    </option>
+
+                </select>
+
+
+                <label for="price">
+                    Price Per Day
+                </label>
+
+                <input
+                    type="number"
+                    id="price"
+                    placeholder="Enter price"
+                    required
+                >
+
+
+                <label for="fuel">
+                    Fuel Type
+                </label>
+
+                <select id="fuel" required>
+
+                    <option value="">
+                        Select fuel type
+                    </option>
+
+                    <option value="Petrol">
+                        Petrol
+                    </option>
+
+                    <option value="Diesel">
+                        Diesel
+                    </option>
+
+                    <option value="Electric">
+                        Electric
+                    </option>
+
+                    <option value="CNG">
+                        CNG
+                    </option>
+
+                </select>
+
+
+                <label for="transmission">
+                    Transmission
+                </label>
+
+                <select id="transmission" required>
+
+                    <option value="">
+                        Select transmission
+                    </option>
+
+                    <option value="Manual">
+                        Manual
+                    </option>
+
+                    <option value="Automatic">
+                        Automatic
+                    </option>
+
+                </select>
+
+
+                <label for="seats">
+                    Number of Seats
+                </label>
+
+                <input
+                    type="number"
+                    id="seats"
+                    placeholder="Enter number of seats"
+                    required
+                >
+
+
+                <label for="status">
+                    Vehicle Status
+                </label>
+
+                <select id="status" required>
+
+                    <option value="Available">
+                        Available
+                    </option>
+
+                    <option value="Rented">
+                        Rented
+                    </option>
+
+                    <option value="Unavailable">
+                        Unavailable
+                    </option>
+
+                </select>
+
+
+                <div class="edit-vehicle-buttons">
+
+                    <button
+                        type="submit"
+                        class="update-vehicle-btn">
+
+                        Update Vehicle
+
+                    </button>
+
+
+                    <a
+                        href="admin.html"
+                        class="cancel-vehicle-btn">
+
+                        Cancel
+
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 DriveEase. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="../Javascript Files/edit_vehicle.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DriveEase - Vehicles</title>
+
+    <link rel="stylesheet" href="../Css Files/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h2>DriveEase</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vehicles.html">Vehicles</a></li>
+                <li><a href="my_rentals.html">My Rentals</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Page Heading -->
+    <section class="vehicle-heading">
+
+        <h1>Explore Our Vehicles</h1>
+
+        <p>
+            Find the perfect ride for your next journey.
+        </p>
+
+    </section>
+
+
+<section class="vehicle-search">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a vehicle..."
+    >
+
+    <button
+        type="button"
+        id="searchButton">
+        Search
+    </button>
+
+    <select id="typeFilter">
+
+        <option value="All">
+            All Vehicles
+        </option>
+
+        <option value="Car">
+            Cars
+        </option>
+
+        <option value="Bike">
+            Bikes
+        </option>
+
+        <option value="Scooter">
+            Scooters
+        </option>
+
+        <option value="SUV">
+            SUVs
+        </option>
+
+        <option value="Luxury">
+            Luxury
+        </option>
+
+    </select>
+
+</section>
+
+
+    <!-- Vehicle Cards -->
+    <!-- JavaScript will add vehicles here -->
+
+    <section
+        class="vehicle-container"
+        id="vehicleContainer">
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 DriveEase. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="../Javascript Files/vehicles.js"></script>
+
+</body>
+
+</html>

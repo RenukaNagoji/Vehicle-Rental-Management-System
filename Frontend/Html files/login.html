@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DriveEase - Login</title>
+
+    <link rel="stylesheet" href="../Css Files/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h2>DriveEase</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vehicles.html">Vehicles</a></li>
+                <li><a href="my_rentals.html">My Rentals</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Login Section -->
+    <section class="auth-section">
+
+        <div class="auth-container">
+
+            <h1>Welcome Back</h1>
+
+            <p>Login to continue using DriveEase.</p>
+
+
+            <form id="loginForm">
+
+                <!-- Email -->
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <!-- Password -->
+                <label for="password">Password</label>
+
+                <div class="password-container">
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                    <span
+                        class="toggle-password"
+                        onclick="togglePassword('password', this)"
+                    >
+                        👁
+                    </span>
+
+                </div>
+
+
+                <!-- Login Button -->
+                <button type="submit" class="auth-btn">
+                    Login
+                </button>
+
+            </form>
+
+
+            <!-- Register Link -->
+            <p class="auth-link">
+                Don't have an account?
+                <a href="register.html">Create an account</a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 DriveEase. All rights reserved.</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="../Javascript Files/login.js"></script>
+
+</body>
+
+</html>

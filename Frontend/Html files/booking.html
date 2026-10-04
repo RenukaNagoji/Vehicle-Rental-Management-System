@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DriveEase - Booking</title>
+
+    <link rel="stylesheet" href="../Css Files/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h2>DriveEase</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vehicles.html">Vehicles</a></li>
+                <li><a href="my_rentals.html">My Rentals</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+
+        <div class="booking-container">
+
+            <h1>Book Your Vehicle</h1>
+
+            <!-- Selected Vehicle -->
+            <div class="selected-vehicle">
+
+                <h2 id="vehicleName">
+                    Loading...
+                </h2>
+
+                <p id="vehicleType">
+                    Loading...
+                </p>
+
+                <h3 id="vehiclePrice">
+                    Loading...
+                </h3>
+
+            </div>
+
+
+            <!-- Booking Form -->
+            <div class="booking-form">
+
+                <label for="pickup">
+                    Pickup Date
+                </label>
+
+                <input
+                    type="date"
+                    id="pickup"
+                    required
+                >
+
+
+                <label for="return">
+                    Return Date
+                </label>
+
+                <input
+                    type="date"
+                    id="return"
+                    required
+                >
+
+
+                <label for="location">
+                    Pickup Location
+                </label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Enter pickup location"
+                    required
+                >
+
+
+                <!-- Rental Summary -->
+                <div class="rental-summary">
+
+                    <h2>Rental Summary</h2>
+
+                    <p>
+                        Number of Days:
+                        <span id="days">0</span>
+                    </p>
+
+                    <p>
+                        Total Amount:
+                        <span id="total">₹0</span>
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="btn"
+                    id="confirmBooking">
+                    Confirm Rental
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 DriveEase. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="../Javascript Files/booking.js"></script>
+
+</body>
+
+</html>

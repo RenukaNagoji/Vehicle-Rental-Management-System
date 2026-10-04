@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DriveEase - Admin Login</title>
+
+    <link rel="stylesheet"
+          href="../Css Files/style.css">
+
+</head>
+
+<body>
+
+    <!-- ===============================
+         NAVIGATION
+    ================================ -->
+
+    <header>
+
+        <nav>
+
+            <h2>DriveEase</h2>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="vehicles.html">
+                        Vehicles
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        User Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ===============================
+         ADMIN LOGIN
+    ================================ -->
+
+    <section class="auth-section">
+
+        <div class="auth-container">
+
+            <h1>
+                Admin Login
+            </h1>
+
+            <p>
+                Login to access the DriveEase Admin Dashboard.
+            </p>
+
+
+            <form id="adminLoginForm">
+
+                <label for="adminEmail">
+                    Admin Email
+                </label>
+
+                <input
+                    type="email"
+                    id="adminEmail"
+                    placeholder="Enter admin email"
+                    required
+                >
+
+
+                <label for="adminPassword">
+                    Password
+                </label>
+
+                <div class="password-container">
+
+                    <input
+                        type="password"
+                        id="adminPassword"
+                        placeholder="Enter admin password"
+                        required
+                    >
+
+                    <span
+                        class="toggle-password"
+                        onclick="toggleAdminPassword()">
+                        👁
+                    </span>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-btn">
+
+                    Admin Login
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===============================
+         FOOTER
+    ================================ -->
+
+    <footer>
+
+        <p>
+            © 2026 DriveEase. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="../Javascript Files/admin_login.js"></script>
+
+</body>
+
+</html>
